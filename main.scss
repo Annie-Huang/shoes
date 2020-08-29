@@ -129,12 +129,6 @@ section {
     text-align: center;
     line-height: 1.2;
 
-    span {
-      display: block;
-      font-weight: 700;
-      font-size: 2.5rem;
-    }
-
     &:hover,
     &:focus {
       transform: scale(1);
@@ -156,6 +150,14 @@ section {
       // -1 works because the 'transform' property in the parent put in another layer
       // otherwise the -1 will put behind the featured__item and will not show.
       z-index: -1;
+    }
+  }
+
+  &__details {
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 2.5rem;
     }
   }
 }
