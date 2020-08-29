@@ -30,6 +30,10 @@ p {
   margin: 0 auto;
 }
 
+.spacing>*+* {
+  margin-top: var(--spacer, 2rem);
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -76,6 +80,8 @@ p {
   // Atm, IE will looks nothing, while chrome still display the image
   //background: #222;
 
+  // The nested @support inside a classname e.g. .hero, is only support in scss file.
+  // Normally you have to write outside.
   @supports (background-blend-mode: multiply) {
     background-image:
       url("img/shoe-3.png"),
