@@ -97,4 +97,17 @@ section {
   }
 }
 
+.featured {
+  background: #eee;
+}
+.featured__item {
+  display: block;
+  position: relative;
+  transform: scale(0.85);
+  transition: transform 250ms ease-in-out;
+}
+.featured__item:hover, .featured__item:focus {
+  transform: scale(1);
+}
+
 /*# sourceMappingURL=main.css.map */

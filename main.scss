@@ -116,7 +116,21 @@ section {
 }
 
 
+.featured {
+  background: #eee;
 
+  &__item {
+    display: block; // this is not necessary
+    position: relative;
+    transform: scale(0.85);
+    transition: transform 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1);
+    }
+  }
+}
 
 
 
