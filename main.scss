@@ -87,6 +87,9 @@ p {
       url("img/shoe-3.png"),
       radial-gradient(#444, #111); // circulate radial out, center is first value, outside is second value
     background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   //background-size: 10%;
