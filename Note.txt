@@ -4,6 +4,7 @@ https://github.com/kevin-powell/shoes
 https://github.com/Annie-Huang/shoes
 
 https://fonts.google.com/specimen/Noto+Sans+JP?query=noto
+https://fonts.google.com/specimen/Noto+Sans+JP?query=noto&sidebar.open=true&selection.family=Noto+Sans+JP:wght@300;700
 
 ======================================================
 
