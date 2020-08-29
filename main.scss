@@ -133,10 +133,13 @@ section {
     // Before or after doesn't really matter. z-index has to be -1 for it to lay behind
     &::after {
       content: '';
-      top: 0;
-      left: 0;
+      //top: 0;
+      //left: 0;
+      top: 10%;
+      left: 10%;
       position: absolute;
-      padding: 100% 100% 0 0;
+      //padding: 100% 100% 0 0;
+      padding: 75% 75% 0 0;
       border-radius: 50%;
       background: #2193b0;
 
