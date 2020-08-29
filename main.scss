@@ -74,20 +74,15 @@ p {
   // Tested this, cannot be used as a background color in case problem with loading the image.
   // Once you enable this, it will ignore the below settings.
   // Atm, IE will looks nothing, while chrome still display the image
-  //background-color: #222;
+  //background: #222;
 
-  //@supports (background-blend-mode: multiply) {
-  //  background-image:
-  //    url("../img/shoe-3.png"),
-  //    radial-gradient(#444, #111); // circulate radial out, center is first value, outside is second value
-  //  background-blend-mode: multiply;
-  //}
+  @supports (background-blend-mode: multiply) {
+    background-image:
+      url("img/shoe-3.png"),
+      radial-gradient(#444, #111); // circulate radial out, center is first value, outside is second value
+    background-blend-mode: multiply;
+  }
 
-  background-image:
-    url("../img/shoe-3.png"),
-    radial-gradient(#444, #111); // circulate radial out, center is first value, outside is second value
-  background-blend-mode: multiply;
-  
   //background-size: 10%;
 }
 

@@ -6,14 +6,22 @@ https://github.com/Annie-Huang/shoes
 https://fonts.google.com/specimen/Noto+Sans+JP?query=noto
 https://fonts.google.com/specimen/Noto+Sans+JP?query=noto&sidebar.open=true&selection.family=Noto+Sans+JP:wght@300;700
 https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+
 https://sass-lang.com/documentation/at-rules/css#supports
 https://developer.mozilla.org/en-US/docs/Web/CSS/@supports
+https://github.com/sass/node-sass/issues/2886
 ======================================================
 
 
 C:\react\shoes>npm init -y
 C:\react\shoes>npm install -g node-sass
 
-C:\react\shoes>npm run sass
+C:\react\shoes>npm run sass     << Decide not to use node-sass transpile before it doesn't support transpile @supports.
+                                   Where as filewatcher does transpile correct, change back to use file-watcher.
+                                   (https://github.com/sass/node-sass/issues/2886)
+                                   Plus file watcher generates main.css.map as well.
 
 
+Note:
+node-sass doesn't not support @supports.
+The correct transpile
