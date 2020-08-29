@@ -109,5 +109,15 @@ section {
 .featured__item:hover, .featured__item:focus {
   transform: scale(1);
 }
+.featured__item::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 100% 100% 0 0;
+  border-radius: 50%;
+  background: #2193b0;
+  z-index: -1;
+}
 
 /*# sourceMappingURL=main.css.map */

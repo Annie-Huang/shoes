@@ -129,6 +129,21 @@ section {
     &:focus {
       transform: scale(1);
     }
+
+    // Before or after doesn't really matter. z-index has to be -1 for it to lay behind
+    &::after {
+      content: '';
+      top: 0;
+      left: 0;
+      position: absolute;
+      padding: 100% 100% 0 0;
+      border-radius: 50%;
+      background: #2193b0;
+
+      // -1 works because the 'transform' property in the parent put in another layer
+      // otherwise the -1 will put behind the featured__item and will not show.
+      z-index: -1;
+    }
   }
 }
 
