@@ -23,5 +23,9 @@ C:\react\shoes>npm run sass     << Decide not to use node-sass transpile before 
 
 
 Note:
-node-sass doesn't not support @supports.
-The correct transpile
+node-sass doesn't not support @supports. (https://github.com/sass/node-sass/issues/2886)
+The correct transpile will put @supports into root level when compile the scss into css.
+
+
+If you tab through Featured products in chrome, it will have very nice border effect.
+
