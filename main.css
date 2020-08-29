@@ -105,6 +105,15 @@ section {
   position: relative;
   transform: scale(0.85);
   transition: transform 250ms ease-in-out;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
+}
+.featured__item span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 .featured__item:hover, .featured__item:focus {
   transform: scale(1);
