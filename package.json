@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "lite-server",
     "sass": "node-sass -w scss/ -o css/ --recursive"
   },
   "repository": {
