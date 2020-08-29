@@ -35,7 +35,7 @@ section {
 
 .split {
   display: flex;
-  gap: 2em;
+  gap: 1em;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -113,6 +113,9 @@ section {
 .featured__item:hover, .featured__item:focus {
   transform: scale(1);
 }
+.featured__item:hover .featured__details, .featured__item:focus .featured__details {
+  opacity: 1;
+}
 .featured__item::after {
   content: "";
   top: 10%;
@@ -122,6 +125,10 @@ section {
   border-radius: 50%;
   background: #2193b0;
   z-index: -1;
+}
+.featured__details {
+  opacity: 0;
+  transition: opacity 250ms linear;
 }
 .featured__details span {
   display: block;

@@ -36,7 +36,7 @@ section {
 
 .split {
   display: flex;
-  gap: 2em; // this is not supported by safari yet.
+  gap: 1em; // this is not supported by safari yet.
   flex-wrap: wrap;
   justify-content: center;
 
@@ -132,6 +132,10 @@ section {
     &:hover,
     &:focus {
       transform: scale(1);
+
+      .featured__details {
+        opacity: 1;
+      }
     }
 
     // Before or after doesn't really matter. z-index has to be -1 for it to lay behind
@@ -154,6 +158,9 @@ section {
   }
 
   &__details {
+    opacity: 0;
+    transition: opacity 250ms linear;
+
     span {
       display: block;
       font-weight: 700;
