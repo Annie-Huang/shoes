@@ -6,7 +6,8 @@ https://github.com/Annie-Huang/shoes
 https://fonts.google.com/specimen/Noto+Sans+JP?query=noto
 https://fonts.google.com/specimen/Noto+Sans+JP?query=noto&sidebar.open=true&selection.family=Noto+Sans+JP:wght@300;700
 https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
-
+https://sass-lang.com/documentation/at-rules/css#supports
+https://developer.mozilla.org/en-US/docs/Web/CSS/@supports
 ======================================================
 
 
