@@ -9,5 +9,8 @@ https://fonts.google.com/specimen/Noto+Sans+JP?query=noto
 
 
 C:\react\shoes>npm init -y
+C:\react\shoes>npm install -g node-sass
+
+C:\react\shoes>npm run sass
 
 
