@@ -51,7 +51,15 @@ p {
   opacity: 0.9;
 }
 
+// Style individual component
+.primary-title {
+  font-size: 4rem; // You need to have a predefined one because IE11 doesn't support clamp and it can fall back into it.
 
+  // using clamp() for font sizes, as in these examples, allows you to set a font-size that grows with the size of the viewport, but doesn't go below a minimum font-size or above a maximum font-size.
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1.1;
+}
 
 
 
