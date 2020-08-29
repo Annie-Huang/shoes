@@ -3,4 +3,11 @@ Build a Modern Landing Page Website | HTML & CSS (https://www.youtube.com/watch?
 https://github.com/kevin-powell/shoes
 https://github.com/Annie-Huang/shoes
 
+https://fonts.google.com/specimen/Noto+Sans+JP?query=noto
+
 ======================================================
+
+
+C:\react\shoes>npm init -y
+
+
