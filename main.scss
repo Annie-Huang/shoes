@@ -187,6 +187,11 @@ section {
   }
 }
 
+// Custom property:
+.hero {
+  --clr-accent: #faa700;
+}
+
 .shoe-red {
   --clr-inner: #faa700;
   --clr-outer: #e48d00;
