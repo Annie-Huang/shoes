@@ -198,7 +198,12 @@ section {
 
     &__image {
       float: right;
-      width: 50%; // Very nice effect to make the text wrap around the image in bigger screen
+      width: 65%; // Very nice effect to make the text wrap around the image in bigger screen
+
+      //outline: 2px solid red;
+      //shape-outside: circle(50%); // Need to view it by firefox devtool
+      shape-outside: url("img/shoe-1.png");
+      shape-margin: 1em;
     }
   }
 }
