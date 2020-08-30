@@ -153,6 +153,12 @@ section {
 .product__image {
   margin-top: -5em;
 }
+@media (min-width: 45em) {
+  .product__image {
+    float: right;
+    width: 50%;
+  }
+}
 
 .hero {
   --clr-accent: #faa700;

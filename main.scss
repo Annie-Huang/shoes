@@ -189,6 +189,15 @@ section {
   &__image {
     margin-top: -5em;
   }
+
+  // 45 * 16 = 720px
+  // Media query better use em, when you zoom in and out, you can see different between devices, specially on safari
+  @media (min-width: 45em) {
+    &__image {
+      float: right;
+      width: 50%; // Very nice effect to make the text wrap around the image in bigger screen
+    }
+  }
 }
 
 // Custom property:
