@@ -174,14 +174,15 @@ section {
   // Can pass in specific color, or not, will use green to purple.
   // The --clr-inner and --clr-outer have to be defined in the same level or parent level
   background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
-  padding: 3em 0;
+  padding: 3em;
   border-radius: 1em;
   margin-bottom: 5em;
   text-align: center;
 
   &__title {
     font-size: 4rem;
-    line-height: 1.1;
+    text-transform: uppercase;
+    line-height: 1;
     color: #fff;
     text-shadow: 0 0 .2em rgba(#000, .2);
   }
@@ -193,6 +194,8 @@ section {
   // 45 * 16 = 720px
   // Media query better use em, when you zoom in and out, you can see different between devices, specially on safari
   @media (min-width: 45em) {
+    text-align: left;
+
     &__image {
       float: right;
       width: 50%; // Very nice effect to make the text wrap around the image in bigger screen
