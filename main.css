@@ -152,17 +152,21 @@ section {
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 }
 .product__image {
-  margin-top: -5em;
+  margin: -5em 0 0 0;
 }
 @media (min-width: 45em) {
   .product {
     text-align: left;
+  }
+  .product__title {
+    margin: 0;
   }
   .product__image {
     float: right;
     width: 65%;
     shape-outside: url("img/shoe-1.png");
     shape-margin: 1em;
+    margin: 0 -5em 0 0;
   }
 }
 

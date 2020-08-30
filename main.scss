@@ -188,13 +188,17 @@ section {
   }
 
   &__image {
-    margin-top: -5em;
+    margin: -5em 0 0 0;
   }
 
   // 45 * 16 = 720px
   // Media query better use em, when you zoom in and out, you can see different between devices, specially on safari
   @media (min-width: 45em) {
     text-align: left;
+
+    &__title {
+      margin: 0;
+    }
 
     &__image {
       float: right;
@@ -204,6 +208,7 @@ section {
       //shape-outside: circle(50%); // Need to view it by firefox devtool
       shape-outside: url("img/shoe-1.png");
       shape-margin: 1em;
+      margin: 0 -5em 0 0;
     }
   }
 }
