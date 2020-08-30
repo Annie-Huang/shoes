@@ -180,7 +180,7 @@ section {
   text-align: center;
 
   &__title {
-    font-size: 4rem;
+    font-size: clamp(3rem, calc(5vw + 1rem), 5.5rem);
     text-transform: uppercase;
     line-height: 1;
     color: #fff;
@@ -195,6 +195,7 @@ section {
   // Media query better use em, when you zoom in and out, you can see different between devices, specially on safari
   @media (min-width: 45em) {
     text-align: left;
+    margin-bottom: 9em;
 
     &__title {
       margin: 0;
